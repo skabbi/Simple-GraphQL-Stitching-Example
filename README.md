@@ -48,13 +48,16 @@ even though the Author and Book services do now offer information about each oth
         "name": "J.K. Rowling",
         "books": [
           {
-            "title": "Harry Potter and the Chamber of Secrets"
+            "title": "Harry Potter and the Chamber of Secrets",
+            "review": 4.4
           },
           {
-            "title": "Fantastic Beasts and Where to Find Them"
+            "title": "Fantastic Beasts and Where to Find Them",
+            "review": 4
           },
           {
-            "title": "The Casual Vacancy"
+            "title": "The Casual Vacancy",
+            "review": 3.3
           }
         ]
       },
