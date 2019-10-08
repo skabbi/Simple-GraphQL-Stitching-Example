@@ -17,11 +17,10 @@ $ node externalServers/bookGraphQL.js
 $ node gateway.js
 => Server ready at http://localhost:3000/
 ```
-
-Then in your browser:
-&nbsp;&nbsp;&nbsp;&nbsp; the URL "http://localhost:3000/" will show you a GraphQL client for the gateway.
-&nbsp;&nbsp;&nbsp;&nbsp; the URL "http://localhost:3001/" will show you a GraphQL client for the Author service
-&nbsp;&nbsp;&nbsp;&nbsp; the URL "http://localhost:3002/" will show you a GraphQL client for the Book service
+Then in your browser:  
+&nbsp;&nbsp;&nbsp;&nbsp; the URL "http://localhost:3000/" will show you a GraphQL client for the gateway.  
+&nbsp;&nbsp;&nbsp;&nbsp; the URL "http://localhost:3001/" will show you a GraphQL client for the Author service.  
+&nbsp;&nbsp;&nbsp;&nbsp; the URL "http://localhost:3002/" will show you a GraphQL client for the Book service.
 
 The gateway allows you to get information about authors and book in a single query,
 even though the Author and Book services do now offer information about each other.
