@@ -20,6 +20,15 @@ let linkTypeDefs = gql `
   extend type Author {
     books: [Book]
   }
+
+  type HealthCheck {
+    timestamp: String
+    nodeVersion: String
+  }
+
+  type Query {
+    healthCheck: HealthCheck
+  }
 `;
 
 async function startServer() {
@@ -46,6 +55,19 @@ async function startServer() {
             info
           });
         }
+      }
+    },
+    HealthCheck: {
+      timestamp: () => {
+        return new Date().toISOString();
+      },
+      nodeVersion: () => {
+        return process.version;
+      }
+    },
+    Query: {
+      healthCheck: () => {
+        return "";
       }
     }
   };
