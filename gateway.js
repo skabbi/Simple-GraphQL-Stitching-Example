@@ -33,7 +33,7 @@ async function startServer() {
   const resolvers = {
     Author: {
       books: {
-        fragment: `... on Author { id }`, // Implicity get the Author ID
+        fragment: `... on Author { id }`, // Implicitly get the Author ID
         resolve(author, args, context, info) {
           return info.mergeInfo.delegateToSchema({
             schema: bookSchema,
